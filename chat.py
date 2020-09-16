@@ -10,11 +10,13 @@ def get_activity_response(user_input):
     #These are the awnsers the bot will give when the user has barely any energy
     bot_response_3_4 = ["Read a book","Watch a movie","Play a board game","Play a card game"]
     #These are the awnsers the bot will give when the user has average energy
-    bot_response_5_6 = []
+    bot_response_5_6 = ["Play video Games","Go for a joy ride", "Go for a walk", "walk the dogs",]
     #These are the awnsers the bot will give when the user has above average energy
-    bot_response_7_8 = []
+    bot_response_7_8 = ["Clean your house", "Hang out with friends", "Go to a party"]
     #These are the awnsers the bot will give when the user has a lot of energy
     bot_response_9_10 = ["Go for a swimm","Go to the gym","Go play your favorite sport","Go jogging","Go skateboarding",]
+   
+   
     if int(user_input) in range(0,3):
         return choice (bot_response_0_2)
     elif int(user_input) in range(9,11):
