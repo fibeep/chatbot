@@ -27,6 +27,8 @@ def get_activity_response(user_input):
         return choice(bot_response_7_8)
     elif int(user_input) in range(9,11):
         return choice(bot_response_9_10)
+    elif int(user_input) == 100:
+        return "Thank you for participating"
     else:
         return ("Please add an awnser within the parameters")
 
@@ -41,5 +43,4 @@ while user_input != 100 :
     print(bot_response)
     
 
-Bye = "Thank you for participating"
-print(Bye)
+
